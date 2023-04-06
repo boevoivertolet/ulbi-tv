@@ -19,6 +19,6 @@ export const userReducer = (state: UserState = initialState, action: UserActionT
     }
 }
 // Action Creators
-export const fetchUsers = () => ({type: 'FETCH_USERS' as const})
-export const fetchUsersSuccess = (users: Array<any>) => ({type: 'FETCH_USERS_SUCCESS' as const, payload: users})
-export const fetchUsersError = (error: string) => ({type: 'FETCH_USERS_ERROR' as const, payload: error})
+export const fetchUsersAC = () => ({type: 'FETCH_USERS' as const})
+export const fetchUsersSuccessAC = (users: Array<any>) => ({type: 'FETCH_USERS_SUCCESS' as const, payload: users})
+export const fetchUsersErrorAC = (error: string) => ({type: 'FETCH_USERS_ERROR' as const, payload: error})

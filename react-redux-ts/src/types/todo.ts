@@ -1,9 +1,9 @@
-import {fetchUsers, fetchUsersError, fetchUsersSuccess} from "../store/reducers/userReducer";
+import {fetchUsersAC, fetchUsersErrorAC, fetchUsersSuccessAC} from "../store/reducers/userReducer";
 
 export type UserActionType =
-    | ReturnType<typeof fetchUsers>
-    | ReturnType<typeof fetchUsersSuccess>
-    | ReturnType<typeof fetchUsersError>
+    | ReturnType<typeof fetchUsersAC>
+    | ReturnType<typeof fetchUsersSuccessAC>
+    | ReturnType<typeof fetchUsersErrorAC>
 
 export type UserState = {
     users: any[]
