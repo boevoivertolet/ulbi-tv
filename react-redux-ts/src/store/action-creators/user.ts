@@ -1,5 +1,5 @@
 import {fetchUsersAC, fetchUsersErrorAC, fetchUsersSuccessAC} from "../reducers/userReducer";
-import {UserActionType} from "../../types/todo";
+import {UserActionType} from "../../types/user";
 import {Dispatch} from "redux";
 import axios from "axios";
 
