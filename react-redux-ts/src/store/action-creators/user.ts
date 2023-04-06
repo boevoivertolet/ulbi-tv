@@ -9,7 +9,10 @@ export const fetchUsers = () => {
         try {
             dispatch(fetchUsersAC())
             const response = await axios.get('https://jsonplaceholder.typicode.com/users')
-            dispatch(fetchUsersSuccessAC(response.data))
+            setTimeout(() => {
+                dispatch(fetchUsersSuccessAC(response.data))
+            }, 1500)
+
         } catch (e) {
             dispatch(fetchUsersErrorAC('Произошла ошибка при загрузке пользователей'))
         }
